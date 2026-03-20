@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Page introuvable · ORO Solution</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand: #2f46ff;
+            --brand-deep: #132a93;
+            --brand-soft: #8af7f0;
+            --accent: #0ea5e9;
+            --text: #0f172a;
+            --muted: #475569;
+            --line: #d7e0f0;
+            --shadow: 0 18px 60px rgba(15, 23, 42, 0.12);
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --font-serif: 'Fraunces', serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: var(--font-sans);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(138, 247, 240, 0.25), transparent 35%),
+                radial-gradient(circle at 80% 80%, rgba(47, 70, 255, 0.1), transparent 35%),
+                linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
+        }
+        a { color: inherit; text-decoration: none; }
+
+        /* ── Nav ── */
+        .site-nav {
+            backdrop-filter: blur(18px);
+            background: rgba(248, 251, 255, 0.85);
+            border-bottom: 1px solid rgba(215, 224, 240, 0.7);
+            padding: 0 24px;
+        }
+        .nav-shell {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            min-height: 76px;
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .brand-wordmark {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--brand-deep);
+        }
+        .brand-tagline {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--brand);
+            background: rgba(47, 70, 255, 0.08);
+            border-radius: 999px;
+            padding: 4px 8px;
+        }
+
+        /* ── Main ── */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 24px;
+        }
+        .error-shell {
+            max-width: 580px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* ── Big 404 ── */
+        .error-number {
+            font-family: var(--font-serif);
+            font-size: clamp(7rem, 20vw, 12rem);
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 60%, var(--brand-soft) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0 0 8px;
+            position: relative;
+        }
+        .error-number::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--brand), var(--accent));
+            border-radius: 999px;
+            margin: 12px auto 0;
+            opacity: 0.4;
+        }
+
+        /* ── Orbit animation ── */
+        .error-orbit {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: -20px auto 0;
+        }
+        .orbit-ring {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 1.5px dashed rgba(47, 70, 255, 0.2);
+            animation: spin 14s linear infinite;
+        }
+        .orbit-ring--outer {
+            inset: -18px;
+            border-color: rgba(14, 165, 233, 0.15);
+            animation-duration: 22s;
+            animation-direction: reverse;
+        }
+        .orbit-dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--brand), var(--accent));
+            top: -5px;
+            left: calc(50% - 5px);
+            box-shadow: 0 0 10px rgba(47, 70, 255, 0.5);
+        }
+        .orbit-dot--outer {
+            width: 7px;
+            height: 7px;
+            top: -3.5px;
+            left: calc(50% - 3.5px);
+            background: linear-gradient(135deg, var(--brand-soft), var(--accent));
+            box-shadow: 0 0 8px rgba(138, 247, 240, 0.6);
+        }
+        .orbit-center {
+            position: absolute;
+            inset: 30px;
+            border-radius: 50%;
+            background: linear-gradient(165deg, rgba(10, 22, 69, 0.95), rgba(19, 42, 147, 0.88));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 12px 40px rgba(19, 42, 147, 0.35), 0 0 0 1px rgba(138, 247, 240, 0.12);
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ── Copy ── */
+        .error-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.74rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--brand-deep);
+            background: rgba(138, 247, 240, 0.4);
+            border-radius: 999px;
+            padding: 7px 14px;
+            margin-bottom: 20px;
+        }
+        .error-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+            line-height: 1.12;
+            color: #08122f;
+            margin: 0 0 16px;
+        }
+        .error-desc {
+            color: var(--muted);
+            font-size: 1rem;
+            line-height: 1.65;
+            max-width: 46ch;
+            margin: 0 auto 32px;
+        }
+
+        /* ── Actions ── */
+        .error-actions {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border-radius: 999px;
+            padding: 13px 24px;
+            font-family: var(--font-sans);
+            font-size: 0.94rem;
+            font-weight: 700;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: transform 150ms ease, box-shadow 150ms ease;
+            text-decoration: none;
+        }
+        .btn:hover { transform: translateY(-1px); }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+            color: #fff;
+            box-shadow: 0 10px 28px rgba(47, 70, 255, 0.25);
+        }
+        .btn-primary:hover { box-shadow: 0 14px 36px rgba(47, 70, 255, 0.35); }
+        .btn-secondary {
+            background: #fff;
+            border-color: var(--line);
+            color: var(--brand-deep);
+        }
+
+        /* ── Quick links ── */
+        .quick-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .quick-label {
+            font-size: 0.82rem;
+            color: var(--muted);
+            font-weight: 600;
+        }
+        .quick-link {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--brand-deep);
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(19, 42, 147, 0.06);
+            border: 1px solid rgba(19, 42, 147, 0.1);
+            transition: background 150ms, color 150ms;
+        }
+        .quick-link:hover {
+            background: rgba(19, 42, 147, 0.12);
+        }
+
+        /* ── Footer ── */
+        .site-footer {
+            border-top: 1px solid rgba(215, 224, 240, 0.9);
+            padding: 18px 24px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.6);
+        }
+        .site-footer p {
+            margin: 0;
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+
+        /* ── Countdown ── */
+        .auto-redirect {
+            margin-top: 28px;
+            font-size: 0.84rem;
+            color: var(--muted);
+        }
+        .countdown {
+            font-weight: 800;
+            color: var(--brand-deep);
+        }
+
+        @media (max-width: 480px) {
+            .error-actions { flex-direction: column; align-items: stretch; }
+            .error-actions .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="site-nav">
+        <div class="nav-shell">
+            <a href="/" class="brand" aria-label="ORO accueil">
+                <svg width="32" height="32" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                    <rect width="36" height="36" rx="10" fill="url(#lg1)"/>
+                    <circle cx="18" cy="18" r="8" stroke="#fff" stroke-width="2.5" fill="none"/>
+                    <circle cx="18" cy="18" r="3.5" fill="#8af7f0"/>
+                    <path d="M18 6v4M18 26v4M6 18h4M26 18h4" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+                    <defs><linearGradient id="lg1" x1="0" y1="0" x2="36" y2="36"><stop stop-color="#2f46ff"/><stop offset="1" stop-color="#132a93"/></linearGradient></defs>
+                </svg>
+                <span class="brand-wordmark">ORO</span>
+                <span class="brand-tagline">Solution</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="error-shell">
+
+            <div class="error-number">404</div>
+
+            <div class="error-orbit" aria-hidden="true">
+                <div class="orbit-ring orbit-ring--outer">
+                    <div class="orbit-dot orbit-dot--outer"></div>
+                </div>
+                <div class="orbit-ring">
+                    <div class="orbit-dot"></div>
+                </div>
+                <div class="orbit-center">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <circle cx="17" cy="17" r="14" stroke="#8af7f0" stroke-width="1.5" fill="none"/>
+                        <path d="M17 10v7.5l4 4" stroke="#8af7f0" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="17" cy="17" r="3" fill="#8af7f0" opacity="0.35"/>
+                    </svg>
+                </div>
+            </div>
+
+            <p class="error-badge">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M6 3.5v3M6 8v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                Page introuvable
+            </p>
+
+            <h1 class="error-title">Cette page n'existe pas<br>ou a été déplacée.</h1>
+
+            <p class="error-desc">
+                Le lien que vous avez suivi est peut-être obsolète, incorrect ou la ressource a été supprimée. Revenez à l'accueil pour retrouver votre chemin.
+            </p>
+
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M2 8l6-6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 6.5V13a1 1 0 001 1h2v-3h2v3h2a1 1 0 001-1V6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Retour à l'accueil
+                </a>
+                <button type="button" class="btn btn-secondary" onclick="history.back()">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Page précédente
+                </button>
+            </div>
+
+            <div class="quick-links">
+                <span class="quick-label">Accès rapides :</span>
+                <a href="/#solutions" class="quick-link">Nos solutions</a>
+                <a href="/#ecosystem" class="quick-link">Écosystème</a>
+                <a href="https://juris.oro-solution.com" class="quick-link" target="_blank" rel="noopener">ORO Juris</a>
+                <a href="https://immo.oro-solution.com" class="quick-link" target="_blank" rel="noopener">ORO Immo</a>
+                <a href="https://app.oro-solution.com" class="quick-link" target="_blank" rel="noopener">Application</a>
+            </div>
+
+            <p class="auto-redirect">
+                Redirection automatique dans <span class="countdown" id="countdown">15</span>s
+            </p>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 ORO Solution · <a href="/" style="color:inherit;font-weight:700;">oro-solution.com</a></p>
+    </footer>
+
+    <script>
+        // Countdown redirect
+        let seconds = 15;
+        const el = document.getElementById('countdown');
+        const timer = setInterval(() => {
+            seconds--;
+            if (el) el.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = '/';
+            }
+        }, 1000);
+
+        // Cancel redirect on user interaction
+        document.querySelectorAll('a, button').forEach(node => {
+            node.addEventListener('click', () => clearInterval(timer));
+        });
+    </script>
+
+</body>
+</html>

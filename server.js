@@ -50,7 +50,7 @@ app.get('/', (_req, res) => {
 
 /* ── 404 ── */
 app.use((_req, res) => {
-    res.status(404).sendFile(path.join(__dirname, 'index.html'));
+    res.status(404).sendFile(path.join(__dirname, '404.html'));
 });
 
 app.listen(PORT, () => {
