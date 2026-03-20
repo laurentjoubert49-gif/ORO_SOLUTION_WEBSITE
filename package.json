@@ -1,0 +1,23 @@
+{
+  "name": "oro-solution-website",
+  "version": "1.0.0",
+  "description": "Site vitrine hub global — oro-solution.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["oro", "legal", "immobilier", "ia", "automatisation"],
+  "author": "ORO Solution",
+  "license": "MIT"
+}
