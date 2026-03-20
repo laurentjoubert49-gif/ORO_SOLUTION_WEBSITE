@@ -19,6 +19,14 @@
     <meta property="og:description" content="Plateforme d'automatisation IA dédiée aux professionnels du droit et de l'immobilier.">
     <meta property="og:site_name" content="ORO">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="/images/favicon-192x192.png">
+    <meta property="og:image" content="https://oro-solution.com/images/logo-512.png">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +59,7 @@
                 <span class="brand-tagline">Solution</span>
             </a>
 
-            <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+            <button type="button" class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
                 <span></span><span></span><span></span>
             </button>
 
@@ -90,34 +98,42 @@
 
                 <div class="hero-visual" aria-hidden="true">
                     <div class="hub-diagram">
-                        <div class="hub-center">
-                            <div class="hub-node hub-node--main">
-                                <div class="hub-node-icon">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#8af7f0" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="5" fill="#8af7f0" opacity="0.8"/><path d="M14 2v4M14 22v4M2 14h4M22 14h4" stroke="#8af7f0" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/></svg>
-                                </div>
-                                <span class="hub-node-label">app.oro-solution.com</span>
-                                <span class="hub-node-sub">Hub central</span>
-                            </div>
+
+                        <!-- Juris -->
+                        <div class="hub-node hub-node--module hub-node--juris">
+                            <div class="hub-module-icon">⚖️</div>
+                            <span class="hub-node-label">Juris</span>
+                            <span class="hub-node-sub">juris.oro-solution.com</span>
                         </div>
-                        <div class="hub-orbit">
-                            <div class="hub-spoke hub-spoke--juris">
-                                <div class="spoke-line"></div>
-                                <div class="hub-node hub-node--module hub-node--juris">
-                                    <div class="hub-module-icon">⚖️</div>
-                                    <span class="hub-node-label">Juris</span>
-                                    <span class="hub-node-sub">juris.oro-solution.com</span>
-                                </div>
-                            </div>
-                            <div class="hub-spoke hub-spoke--immo">
-                                <div class="spoke-line"></div>
-                                <div class="hub-node hub-node--module hub-node--immo">
-                                    <div class="hub-module-icon">🏠</div>
-                                    <span class="hub-node-label">Immo</span>
-                                    <span class="hub-node-sub">immo.oro-solution.com</span>
-                                </div>
-                            </div>
+
+                        <!-- Connector left -->
+                        <div class="hub-connector hub-connector--juris">
+                            <div class="hub-conn-line"></div>
+                            <div class="hub-conn-dot hub-conn-dot--juris"></div>
                         </div>
-                        <div class="hub-pulse"></div>
+
+                        <!-- Hub central -->
+                        <div class="hub-node hub-node--main">
+                            <div class="hub-node-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="#8af7f0" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="5" fill="#8af7f0" opacity="0.8"/><path d="M14 2v4M14 22v4M2 14h4M22 14h4" stroke="#8af7f0" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/></svg>
+                            </div>
+                            <span class="hub-node-label">app.oro-solution.com</span>
+                            <span class="hub-node-sub">Hub central</span>
+                        </div>
+
+                        <!-- Connector right -->
+                        <div class="hub-connector hub-connector--immo">
+                            <div class="hub-conn-dot hub-conn-dot--immo"></div>
+                            <div class="hub-conn-line hub-conn-line--immo"></div>
+                        </div>
+
+                        <!-- Immo -->
+                        <div class="hub-node hub-node--module hub-node--immo">
+                            <div class="hub-module-icon">🏠</div>
+                            <span class="hub-node-label">Immo</span>
+                            <span class="hub-node-sub">immo.oro-solution.com</span>
+                        </div>
+
                     </div>
                 </div>
             </div>

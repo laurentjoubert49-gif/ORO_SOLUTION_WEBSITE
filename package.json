@@ -15,9 +15,17 @@
     "helmet": "^7.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "sharp": "^0.34.5",
+    "to-ico": "^1.1.5"
   },
-  "keywords": ["oro", "legal", "immobilier", "ia", "automatisation"],
+  "keywords": [
+    "oro",
+    "legal",
+    "immobilier",
+    "ia",
+    "automatisation"
+  ],
   "author": "ORO Solution",
   "license": "MIT"
 }
