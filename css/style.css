@@ -1245,6 +1245,38 @@ svg { max-width: 100%; }
 }
 
 /* ═══════════════════════════════════════════════════
+   JURIS DETAIL SECTION
+   ═══════════════════════════════════════════════════ */
+
+.section-juris-detail {
+    background: var(--surface);
+}
+
+.immo-module-card--juris {
+    border-top: 3px solid var(--brand);
+}
+
+.immo-module-card--juris .immo-module-tag {
+    background: rgba(47,70,255,0.08);
+    color: var(--brand-deep);
+    border-color: rgba(47,70,255,0.15);
+}
+
+.juris-plans-grid .immo-plan-card.featured {
+    border-color: var(--brand);
+    box-shadow: 0 8px 32px rgba(47,70,255,0.15);
+}
+
+.juris-plans-grid .immo-plan-card.featured .immo-plan-cta {
+    background: var(--brand);
+    color: #fff;
+}
+
+.juris-plans-grid .immo-plan-card.featured .immo-plan-cta:hover {
+    background: var(--brand-deep);
+}
+
+/* ═══════════════════════════════════════════════════
    LEGAL PAGES — .legal-page
    ═══════════════════════════════════════════════════ */
 

@@ -65,6 +65,7 @@
 
             <div class="nav-links" id="navMenu">
                 <a href="#solutions">Nos solutions</a>
+                <a href="#juris-detail">ORO Juris</a>
                 <a href="#immo-detail">ORO Immo</a>
                 <a href="#ecosystem">Ecosystème</a>
                 <a href="#pourquoi">Pourquoi ORO</a>
@@ -92,7 +93,7 @@
                     </div>
                     <div class="hero-trust">
                         <span>IA déterministe + générative</span>
-                        <span>Données hébergées en France</span>
+                        <span>Données hébergées en UE</span>
                         <span>Conformité RGPD</span>
                     </div>
                 </div>
@@ -157,7 +158,7 @@
                 </div>
                 <div class="signal-item">
                     <strong class="signal-num">100%</strong>
-                    <span>hébergé en France<br>données souveraines</span>
+                    <span>hébergé en UE<br>données souveraines</span>
                 </div>
             </div>
         </section>
@@ -181,14 +182,17 @@
                             <div class="solution-badge">juris.oro-solution.com</div>
                         </div>
                         <h3 class="solution-title">ORO Juris</h3>
-                        <p class="solution-subtitle">Assistant probatoire juridique</p>
-                        <p class="solution-desc">Croisement multi-sources de vos pièces juridiques, extraction de contradictions, construction d'une chronologie probatoire exploitable — avant validation par un professionnel du droit.</p>
+                        <p class="solution-subtitle">Assistant probatoire juridique IA</p>
+                        <p class="solution-desc">Ingestion multi-sources (PDF, emails, SMS, pièces admin), analyse 3 phases — procédurale, juridique, IA — pour construire une chronologie exploitable, détecter les contradictions et générer vos documents de travail.</p>
                         <ul class="solution-features">
-                            <li>Analyse OCR de PDF, emails, SMS et pièces administratives</li>
-                            <li>Détection de contradictions et indices de pression</li>
-                            <li>Chronologie automatique des faits</li>
-                            <li>Export DOCX, PDF, ZIP — mémos et saisines</li>
-                            <li>Synchronisation email Outlook / OAuth2</li>
+                            <li>OCR + ingestion PDF, emails, SMS, DOCX, images</li>
+                            <li>Analyse 3 phases : procédurale · juridique · IA Claude</li>
+                            <li>Chronologie automatique — 140+ événements classés</li>
+                            <li>RAG 4 étapes : sémantique, keywords, fichier, liens</li>
+                            <li>Détection contradictions, DARVO, indices de pression</li>
+                            <li>Export DOCX, PDF, ZIP — mémos, saisines, chronos</li>
+                            <li>Sync email Outlook OAuth2 + import pièces jointes</li>
+                            <li>Multi-tenant isolé — espace de travail par dossier</li>
                         </ul>
                         <div class="solution-targets">
                             <span>Particuliers premium</span>
@@ -196,8 +200,8 @@
                             <span>Juristes & associations</span>
                         </div>
                         <div class="solution-actions">
-                            <a href="https://juris.oro-solution.com" class="btn btn-primary btn-block" target="_blank" rel="noopener">Découvrir ORO Juris</a>
-                            <a href="https://app.oro-solution.com/juris" class="btn btn-ghost btn-block" target="_blank" rel="noopener">Accéder au module</a>
+                            <a href="#juris-detail" class="btn btn-primary btn-block">Voir tous les modules</a>
+                            <a href="https://juris.oro-solution.com" class="btn btn-ghost btn-block" target="_blank" rel="noopener">Site ORO Juris</a>
                         </div>
                     </article>
 
@@ -242,6 +246,122 @@
         </section>
 
         <!-- ═══════════ ORO IMMO — MODULES & PLANS ═══════════ -->
+        <!-- ═══════════ JURIS DETAIL ═══════════ -->
+        <section class="section section-juris-detail" id="juris-detail">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow" style="color:var(--brand-deep);background:rgba(47,70,255,0.09);">ORO Juris — tour des modules</p>
+                    <h2>Une analyse juridique en 3 phases, du document brut au dossier exploitable.</h2>
+                    <p>ORO Juris ingère vos pièces, construit la chronologie, détecte les contradictions et génère vos documents — avec l'IA comme co-pilote à chaque étape.</p>
+                </div>
+
+                <div class="immo-modules-grid">
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📥</div>
+                        <h4>Ingestion documentaire</h4>
+                        <p>Import de PDF, images, emails, SMS, DOCX. OCR Tesseract pour les scans. Déduplication SHA256, chunking 1 200 caract., embeddings OpenAI stockés en base vectorielle.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">⚖️</div>
+                        <h4>Analyse phase 1 — Procédurale</h4>
+                        <p>Mapping déterministe vers 8 domaines du droit français (famille, pénal, commercial…). Chargement des procédures, stade actuel, documents requis — sans appel IA, sans coût token.</p>
+                        <span class="immo-module-tag">Déterministe · Gratuit</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📐</div>
+                        <h4>Analyse phase 2 — Juridique</h4>
+                        <p>Moteur de principes juridiques : 16 principes par domaine, scoring multi-facteur, force probante estimée, lacunes identifiées, charge de la preuve. 100 % déterministe.</p>
+                        <span class="immo-module-tag">Déterministe · Gratuit</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">🤖</div>
+                        <h4>Analyse phase 3 — IA Claude Opus</h4>
+                        <p>Raisonnement syllogistique étendu (3 000 tokens de réflexion), construction d'arguments, détection des contre-arguments. Budget 15 000 tokens par dossier, géré et traçable.</p>
+                        <span class="immo-module-tag">Premium · Pro</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">🔍</div>
+                        <h4>RAG 4 étapes</h4>
+                        <p>Recherche hybride : similarité vectorielle → mots-clés full-text → correspondance nom de fichier → découverte par liens. Citations avec scores de confiance, snippets contextuels.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📅</div>
+                        <h4>Chronologie & timeline</h4>
+                        <p>Extraction automatique d'événements datés depuis tous les documents. 140+ événements indexés, vue hybride RAG + legacy, filtrages, zoom, export. Correction timezone locale intégrée.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">🧠</div>
+                        <h4>Détection patterns & DARVO</h4>
+                        <p>Identification automatique de patterns comportementaux : DARVO, contrôle coercitif, inversion accusatoire, incohérences cross-document, indices de pression. Alertes structurées.</p>
+                        <span class="immo-module-tag">Premium · Pro</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📧</div>
+                        <h4>Intégration email Outlook</h4>
+                        <p>Connexion OAuth2 Azure Entra ID. Synchronisation des dossiers email, import automatique des pièces jointes, parsing SMS. Ingestion en pipeline complet depuis la boîte mail.</p>
+                        <span class="immo-module-tag">Pro · Cabinet</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📄</div>
+                        <h4>Génération de documents</h4>
+                        <p>17 exports disponibles : mémos DOCX/PDF, chronologies structurées, saisines, synthèses de preuves, ZIP complets. Formatage professionnel, citations sourcées.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">💬</div>
+                        <h4>Chat IA dossier</h4>
+                        <p>Interface de chat avec accès au contexte complet du dossier. Le modèle répond en s'appuyant sur vos pièces réelles via RAG — pas de réponses génériques hors contexte.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">🏗️</div>
+                        <h4>Mémoire de dossier</h4>
+                        <p>Stockage persistant de l'état d'analyse par dossier (phase 1, 2, 3, timeline, faits extraits). Verrouillage optimiste, cache 5 min, invalidation manuelle. Reprise contextuelle à chaque session.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📊</div>
+                        <h4>Quotas IA & monitoring</h4>
+                        <p>Suivi token par token des consommations IA (GPT-5, Claude Opus). Alertes à 50 %, 80 %, 100 %. Estimation coût EUR par requête. Tableau de bord admin avec MRR/ARR et usage global.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                </div>
+
+                <!-- Plans Juris -->
+                <div class="immo-plans-intro">
+                    <h3>Des formules pour chaque profil</h3>
+                    <p>Du premier essai gratuit à l'offre cabinet — le quota IA évolue avec vos besoins.</p>
+                </div>
+
+                <div class="immo-plans-grid juris-plans-grid">
+                    <div class="immo-plan-card">
+                        <div class="immo-plan-name">Free</div>
+                        <div class="immo-plan-price">0 €</div>
+                        <div class="immo-plan-period">pour toujours</div>
+                        <div class="immo-plan-desc">1 espace de travail · Ingestion limitée · Phases 1 & 2 · Chat IA · Idéal pour tester.</div>
+                        <a href="https://juris.oro-solution.com#essai" class="immo-plan-cta" target="_blank" rel="noopener">Commencer</a>
+                    </div>
+                    <div class="immo-plan-card featured">
+                        <div class="immo-plan-name">Premium</div>
+                        <div class="immo-plan-price">Sur devis</div>
+                        <div class="immo-plan-period">/ mois</div>
+                        <div class="immo-plan-desc">Dossiers illimités · Phase 3 IA Claude · RAG complet · Outlook sync · Exports DOCX/PDF.</div>
+                        <a href="https://juris.oro-solution.com#contact" class="immo-plan-cta" target="_blank" rel="noopener">Demander</a>
+                    </div>
+                    <div class="immo-plan-card">
+                        <div class="immo-plan-name">Pro / Cabinet</div>
+                        <div class="immo-plan-price">Sur devis</div>
+                        <div class="immo-plan-period">selon usage</div>
+                        <div class="immo-plan-desc">Multi-utilisateurs · Quota IA dédié · Onboarding · SLA · Intégration cabinet.</div>
+                        <a href="https://juris.oro-solution.com#contact" class="immo-plan-cta" target="_blank" rel="noopener">Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section section-immo" id="immo-detail">
             <div class="container">
                 <div class="section-heading">
@@ -447,7 +567,7 @@
                         <div class="eco-feature-card">
                             <div class="eco-feature-icon">🇫🇷</div>
                             <h4>Hébergement souverain</h4>
-                            <p>Données hébergées en France sur o2switch. Conformité RGPD garantie. Aucun transfert hors UE.</p>
+                            <p>Données hébergées en Union Européenne. Conformité RGPD garantie. Aucun transfert hors UE.</p>
                         </div>
                     </div>
                 </div>
@@ -492,7 +612,7 @@
                     <div class="why-card">
                         <div class="why-num">06</div>
                         <h4>Sécurité & souveraineté données</h4>
-                        <p>Auth JWT, rate limiting, Helmet headers, CORS strict. Données hébergées sur o2switch France. Aucun transfert hors UE. RGPD par conception.</p>
+                        <p>Auth JWT, rate limiting, Helmet headers, CORS strict. Données hébergées en Union Européenne. Aucun transfert hors UE. RGPD par conception.</p>
                     </div>
                 </div>
             </div>
@@ -544,7 +664,7 @@
                     <span class="brand-wordmark">ORO Solution</span>
                 </a>
                 <p class="footer-copy">Automatisation intelligente pour les professionnels du droit et de l'immobilier.</p>
-                <p class="footer-copy footer-copy--sm">Hébergé sur o2switch · France · RGPD</p>
+                <p class="footer-copy footer-copy--sm">Hébergé en Union Européenne · RGPD</p>
             </div>
 
             <div class="footer-columns">
