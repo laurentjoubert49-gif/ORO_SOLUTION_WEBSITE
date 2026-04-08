@@ -20,10 +20,10 @@
     --accent: #0ea5e9;
 
     /* Immo accent */
-    --immo: #f59e0b;
-    --immo-deep: #b45309;
-    --immo-soft: #fef3c7;
-    --immo-glow: rgba(245, 158, 11, 0.18);
+    --immo: #c8960c;
+    --immo-deep: #92400e;
+    --immo-soft: #fef9e7;
+    --immo-glow: rgba(200, 150, 12, 0.18);
 
     /* Juris accent */
     --juris-glow: rgba(47, 70, 255, 0.14);
@@ -192,11 +192,11 @@ h1, h2, h3, h4 { margin: 0 0 1rem; }
 .btn-ghost:hover { background: rgba(47, 70, 255, 0.1); }
 
 .btn-immo {
-    background: linear-gradient(135deg, var(--immo) 0%, #ef4444 100%);
+    background: linear-gradient(135deg, var(--immo) 0%, #d97706 100%);
     color: #fff;
-    box-shadow: 0 10px 28px rgba(245, 158, 11, 0.28);
+    box-shadow: 0 10px 28px rgba(200, 150, 12, 0.28);
 }
-.btn-immo:hover { box-shadow: 0 14px 36px rgba(245, 158, 11, 0.36); }
+.btn-immo:hover { box-shadow: 0 14px 36px rgba(200, 150, 12, 0.36); }
 
 .btn-nav {
     padding: 11px 18px;
@@ -521,9 +521,9 @@ h1, h2, h3, h4 { margin: 0 0 1rem; }
     display: block;
 }
 .solution-icon--immo {
-    background: linear-gradient(135deg, var(--immo), #ef4444);
+    background: linear-gradient(135deg, var(--immo), #d97706);
     color: #fff;
-    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.28);
+    box-shadow: 0 8px 20px rgba(200, 150, 12, 0.28);
 }
 .solution-badge {
     font-size: 0.72rem;
@@ -586,7 +586,7 @@ h1, h2, h3, h4 { margin: 0 0 1rem; }
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--immo), #ef4444);
+    background: linear-gradient(135deg, var(--immo), #d97706);
     flex-shrink: 0;
     margin-top: 5px;
 }
@@ -949,6 +949,157 @@ h1, h2, h3, h4 { margin: 0 0 1rem; }
     margin: 0;
 }
 
+/* ═══════════ IMMO MODULES ═══════════ */
+.section-immo {
+    background: linear-gradient(180deg, rgba(255,251,235,0.6) 0%, rgba(254,249,231,0.3) 100%);
+}
+.immo-modules-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 56px;
+}
+.immo-module-card {
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(200, 150, 12, 0.14);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 200ms, box-shadow 200ms;
+}
+.immo-module-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(200, 150, 12, 0.12);
+}
+.immo-module-icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+.immo-module-card h4 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #08122f;
+    margin-bottom: 8px;
+}
+.immo-module-card p {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.55;
+    margin: 0;
+}
+.immo-module-tag {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--immo-deep);
+    background: rgba(200, 150, 12, 0.08);
+    border: 1px solid rgba(200, 150, 12, 0.15);
+    border-radius: 999px;
+    padding: 4px 10px;
+}
+
+/* ── Plans Immo ── */
+.immo-plans-intro {
+    text-align: center;
+    margin-bottom: 28px;
+}
+.immo-plans-intro h3 {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    color: #08122f;
+    margin-bottom: 10px;
+}
+.immo-plans-intro p {
+    color: var(--muted);
+    font-size: 0.98rem;
+}
+.immo-plans-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    align-items: stretch;
+}
+.immo-plan-card {
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgba(200, 150, 12, 0.12);
+    border-radius: var(--radius-md);
+    padding: 20px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 200ms, box-shadow 200ms;
+}
+.immo-plan-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(200, 150, 12, 0.14);
+}
+.immo-plan-card.featured {
+    background: linear-gradient(165deg, rgba(25, 25, 50, 0.97), rgba(19, 42, 147, 0.92));
+    border-color: rgba(200, 150, 12, 0.35);
+    color: #eef6ff;
+    box-shadow: 0 20px 50px rgba(19, 42, 147, 0.3);
+}
+.immo-plan-name {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--immo-deep);
+}
+.immo-plan-card.featured .immo-plan-name { color: var(--immo); }
+.immo-plan-price {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #08122f;
+    line-height: 1;
+}
+.immo-plan-card.featured .immo-plan-price { color: #fff; }
+.immo-plan-period {
+    font-size: 0.74rem;
+    color: var(--muted);
+    margin-top: -4px;
+}
+.immo-plan-card.featured .immo-plan-period { color: rgba(186, 230, 253, 0.7); }
+.immo-plan-desc {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.45;
+    flex-grow: 1;
+}
+.immo-plan-card.featured .immo-plan-desc { color: rgba(186, 230, 253, 0.8); }
+.immo-plan-cta {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-align: center;
+    background: rgba(200, 150, 12, 0.1);
+    color: var(--immo-deep);
+    border: 1px solid rgba(200, 150, 12, 0.2);
+    transition: background 150ms;
+}
+.immo-plan-cta:hover { background: rgba(200, 150, 12, 0.18); }
+.immo-plan-card.featured .immo-plan-cta {
+    background: var(--immo);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(200, 150, 12, 0.3);
+}
+.immo-plan-card.featured .immo-plan-cta:hover { background: #d97706; }
+
+/* ── Why card immo variant ── */
+.why-card--immo .why-num { color: var(--immo); }
+.why-card--immo {
+    border-color: rgba(200, 150, 12, 0.14);
+    background: linear-gradient(165deg, rgba(255,255,255,0.95), rgba(254,249,231,0.4));
+}
+
 /* ═══════════ RESPONSIVE ═══════════ */
 @media (max-width: 1080px) {
     .hero-inner { grid-template-columns: 1fr; }
@@ -963,6 +1114,8 @@ h1, h2, h3, h4 { margin: 0 0 1rem; }
     .footer-grid { flex-direction: column; }
     .footer-columns { flex-direction: column; gap: 24px; }
     .footer-brand-block { max-width: 100%; }
+    .immo-modules-grid { grid-template-columns: repeat(2, 1fr); }
+    .immo-plans-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 860px) {
@@ -1002,4 +1155,6 @@ h1, h2, h3, h4 { margin: 0 0 1rem; }
     .hero-actions .btn { width: 100%; }
     .footer-columns { gap: 20px; }
     .footer-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .immo-modules-grid { grid-template-columns: 1fr; }
+    .immo-plans-grid { grid-template-columns: repeat(2, 1fr); }
 }
