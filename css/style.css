@@ -684,6 +684,13 @@ svg { max-width: 100%; }
 }
 .eco-node--juris { border-color: rgba(138, 247, 240, 0.2); }
 .eco-node--immo { border-color: rgba(245, 158, 11, 0.3); }
+.eco-node--ext {
+    border-color: rgba(138, 247, 240, 0.15);
+    background: rgba(255, 255, 255, 0.04);
+}
+.eco-node--ext .eco-node-url { color: rgba(138, 247, 240, 0.75); }
+.eco-tier-row--ext { gap: 10px; flex-wrap: wrap; }
+.eco-tier-row--ext .eco-node { flex: 1 1 calc(50% - 10px); min-width: 120px; }
 .eco-node-url {
     font-size: 0.79rem;
     font-weight: 800;
@@ -1290,8 +1297,8 @@ body.legal-body {
     top: 0;
     z-index: 100;
     background: rgba(255,255,255,0.92);
-    backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--line);
     height: 64px;
     display: flex;

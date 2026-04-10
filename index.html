@@ -65,12 +65,11 @@
 
             <div class="nav-links" id="navMenu">
                 <a href="#solutions">Nos solutions</a>
-                <a href="#juris-detail">ORO Juris</a>
                 <a href="#immo-detail">ORO Immo</a>
+                <a href="#juris-detail">ORO Juris</a>
                 <a href="#ecosystem">Ecosystème</a>
                 <a href="#pourquoi">Pourquoi ORO</a>
                 <a href="#acces">Accès</a>
-                <a href="https://oro-juris.onrender.com" class="btn btn-nav" target="_blank" rel="noopener">Accéder à l'app</a>
             </div>
         </div>
     </nav>
@@ -89,7 +88,6 @@
                     <p class="hero-lead">ORO automatise les tâches documentaires, analytiques et probatoires des métiers du droit et de l'immobilier. Deux modules spécialisés. Une infrastructure commune. Une seule application centrale.</p>
                     <div class="hero-actions">
                         <a href="#solutions" class="btn btn-primary">Découvrir nos solutions</a>
-                        <a href="https://oro-juris.onrender.com" class="btn btn-secondary" target="_blank" rel="noopener">Accéder à l'app</a>
                     </div>
                     <div class="hero-trust">
                         <span>IA déterministe + générative</span>
@@ -101,17 +99,17 @@
                 <div class="hero-visual" aria-hidden="true">
                     <div class="hub-diagram">
 
-                        <!-- Juris -->
-                        <div class="hub-node hub-node--module hub-node--juris">
-                            <div class="hub-module-icon">⚖️</div>
-                            <span class="hub-node-label">Juris</span>
-                            <span class="hub-node-sub">juris.oro-solution.com</span>
+                        <!-- Immo -->
+                        <div class="hub-node hub-node--module hub-node--immo">
+                            <div class="hub-module-icon">🏠</div>
+                            <span class="hub-node-label">Immo</span>
+                            <span class="hub-node-sub">immo.oro-solution.com</span>
                         </div>
 
                         <!-- Connector left -->
                         <div class="hub-connector hub-connector--juris">
                             <div class="hub-conn-line"></div>
-                            <div class="hub-conn-dot hub-conn-dot--juris"></div>
+                            <div class="hub-conn-dot hub-conn-dot--immo"></div>
                         </div>
 
                         <!-- Hub central -->
@@ -125,15 +123,15 @@
 
                         <!-- Connector right -->
                         <div class="hub-connector hub-connector--immo">
-                            <div class="hub-conn-dot hub-conn-dot--immo"></div>
+                            <div class="hub-conn-dot hub-conn-dot--juris"></div>
                             <div class="hub-conn-line hub-conn-line--immo"></div>
                         </div>
 
-                        <!-- Immo -->
-                        <div class="hub-node hub-node--module hub-node--immo">
-                            <div class="hub-module-icon">🏠</div>
-                            <span class="hub-node-label">Immo</span>
-                            <span class="hub-node-sub">immo.oro-solution.com</span>
+                        <!-- Juris -->
+                        <div class="hub-node hub-node--module hub-node--juris">
+                            <div class="hub-module-icon">⚖️</div>
+                            <span class="hub-node-label">Juris</span>
+                            <span class="hub-node-sub">juris.oro-solution.com</span>
                         </div>
 
                     </div>
@@ -173,38 +171,6 @@
                 </div>
 
                 <div class="solutions-grid">
-                    <!-- JURIS -->
-                    <article class="solution-card solution-card--juris">
-                        <div class="solution-header">
-                            <div class="solution-icon solution-icon--juris solution-icon--logo">
-                                <img src="/images/logo-juris-symbol.png" alt="ORO Juris" class="solution-logo-img">
-                            </div>
-                            <div class="solution-badge">juris.oro-solution.com</div>
-                        </div>
-                        <h3 class="solution-title">ORO Juris</h3>
-                        <p class="solution-subtitle">Assistant probatoire juridique IA</p>
-                        <p class="solution-desc">Ingestion multi-sources (PDF, emails, SMS, pièces admin), analyse 3 phases — procédurale, juridique, IA — pour construire une chronologie exploitable, détecter les contradictions et générer vos documents de travail.</p>
-                        <ul class="solution-features">
-                            <li>OCR + ingestion PDF, emails, SMS, DOCX, images</li>
-                            <li>Analyse 3 phases : procédurale · juridique · IA Claude</li>
-                            <li>Chronologie automatique — 140+ événements classés</li>
-                            <li>RAG 4 étapes : sémantique, keywords, fichier, liens</li>
-                            <li>Détection contradictions, DARVO, indices de pression</li>
-                            <li>Export DOCX, PDF, ZIP — mémos, saisines, chronos</li>
-                            <li>Sync email Outlook OAuth2 + import pièces jointes</li>
-                            <li>Multi-tenant isolé — espace de travail par dossier</li>
-                        </ul>
-                        <div class="solution-targets">
-                            <span>Particuliers premium</span>
-                            <span>Avocats & cabinets</span>
-                            <span>Juristes & associations</span>
-                        </div>
-                        <div class="solution-actions">
-                            <a href="#juris-detail" class="btn btn-primary btn-block">Voir tous les modules</a>
-                            <a href="https://juris.oro-solution.com" class="btn btn-ghost btn-block" target="_blank" rel="noopener">Site ORO Juris</a>
-                        </div>
-                    </article>
-
                     <!-- IMMO -->
                     <article class="solution-card solution-card--immo">
                         <div class="solution-header">
@@ -241,127 +207,43 @@
                             <a href="https://oro-immo-app.onrender.com" class="btn btn-ghost btn-block" target="_blank" rel="noopener">Accéder à l'application</a>
                         </div>
                     </article>
+
+                    <!-- JURIS -->
+                    <article class="solution-card solution-card--juris">
+                        <div class="solution-header">
+                            <div class="solution-icon solution-icon--juris solution-icon--logo">
+                                <img src="/images/logo-juris-symbol.png" alt="ORO Juris" class="solution-logo-img">
+                            </div>
+                            <div class="solution-badge">juris.oro-solution.com</div>
+                        </div>
+                        <h3 class="solution-title">ORO Juris</h3>
+                        <p class="solution-subtitle">Assistant probatoire juridique IA</p>
+                        <p class="solution-desc">Ingestion multi-sources (PDF, emails, SMS, pièces admin), analyse 3 phases — procédurale, juridique, IA — pour construire une chronologie exploitable, détecter les contradictions et générer vos documents de travail.</p>
+                        <ul class="solution-features">
+                            <li>OCR + ingestion PDF, emails, SMS, DOCX, images</li>
+                            <li>Analyse 3 phases : procédurale · juridique · IA Claude</li>
+                            <li>Chronologie automatique — 140+ événements classés</li>
+                            <li>RAG 4 étapes : sémantique, keywords, fichier, liens</li>
+                            <li>Détection contradictions, DARVO, indices de pression</li>
+                            <li>Export DOCX, PDF, ZIP — mémos, saisines, chronos</li>
+                            <li>Sync email Outlook OAuth2 + import pièces jointes</li>
+                            <li>Multi-tenant isolé — espace de travail par dossier</li>
+                        </ul>
+                        <div class="solution-targets">
+                            <span>Particuliers premium</span>
+                            <span>Avocats & cabinets</span>
+                            <span>Juristes & associations</span>
+                        </div>
+                        <div class="solution-actions">
+                            <a href="#juris-detail" class="btn btn-primary btn-block">Voir tous les modules</a>
+                            <a href="https://juris.oro-solution.com" class="btn btn-ghost btn-block" target="_blank" rel="noopener">Site ORO Juris</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- ═══════════ ORO IMMO — MODULES & PLANS ═══════════ -->
-        <!-- ═══════════ JURIS DETAIL ═══════════ -->
-        <section class="section section-juris-detail" id="juris-detail">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow" style="color:var(--brand-deep);background:rgba(47,70,255,0.09);">ORO Juris — tour des modules</p>
-                    <h2>Une analyse juridique en 3 phases, du document brut au dossier exploitable.</h2>
-                    <p>ORO Juris ingère vos pièces, construit la chronologie, détecte les contradictions et génère vos documents — avec l'IA comme co-pilote à chaque étape.</p>
-                </div>
-
-                <div class="immo-modules-grid">
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">📥</div>
-                        <h4>Ingestion documentaire</h4>
-                        <p>Import de PDF, images, emails, SMS, DOCX. OCR Tesseract pour les scans. Déduplication SHA256, chunking 1 200 caract., embeddings OpenAI stockés en base vectorielle.</p>
-                        <span class="immo-module-tag">Tous les plans</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">⚖️</div>
-                        <h4>Analyse phase 1 — Procédurale</h4>
-                        <p>Mapping déterministe vers 8 domaines du droit français (famille, pénal, commercial…). Chargement des procédures, stade actuel, documents requis — sans appel IA, sans coût token.</p>
-                        <span class="immo-module-tag">Déterministe · Gratuit</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">📐</div>
-                        <h4>Analyse phase 2 — Juridique</h4>
-                        <p>Moteur de principes juridiques : 16 principes par domaine, scoring multi-facteur, force probante estimée, lacunes identifiées, charge de la preuve. 100 % déterministe.</p>
-                        <span class="immo-module-tag">Déterministe · Gratuit</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">🤖</div>
-                        <h4>Analyse phase 3 — IA Claude Opus</h4>
-                        <p>Raisonnement syllogistique étendu (3 000 tokens de réflexion), construction d'arguments, détection des contre-arguments. Budget 15 000 tokens par dossier, géré et traçable.</p>
-                        <span class="immo-module-tag">Premium · Pro</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">🔍</div>
-                        <h4>RAG 4 étapes</h4>
-                        <p>Recherche hybride : similarité vectorielle → mots-clés full-text → correspondance nom de fichier → découverte par liens. Citations avec scores de confiance, snippets contextuels.</p>
-                        <span class="immo-module-tag">Tous les plans</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">📅</div>
-                        <h4>Chronologie & timeline</h4>
-                        <p>Extraction automatique d'événements datés depuis tous les documents. 140+ événements indexés, vue hybride RAG + legacy, filtrages, zoom, export. Correction timezone locale intégrée.</p>
-                        <span class="immo-module-tag">Tous les plans</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">🧠</div>
-                        <h4>Détection patterns & DARVO</h4>
-                        <p>Identification automatique de patterns comportementaux : DARVO, contrôle coercitif, inversion accusatoire, incohérences cross-document, indices de pression. Alertes structurées.</p>
-                        <span class="immo-module-tag">Premium · Pro</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">📧</div>
-                        <h4>Intégration email Outlook</h4>
-                        <p>Connexion OAuth2 Azure Entra ID. Synchronisation des dossiers email, import automatique des pièces jointes, parsing SMS. Ingestion en pipeline complet depuis la boîte mail.</p>
-                        <span class="immo-module-tag">Pro · Cabinet</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">📄</div>
-                        <h4>Génération de documents</h4>
-                        <p>17 exports disponibles : mémos DOCX/PDF, chronologies structurées, saisines, synthèses de preuves, ZIP complets. Formatage professionnel, citations sourcées.</p>
-                        <span class="immo-module-tag">Tous les plans</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">💬</div>
-                        <h4>Chat IA dossier</h4>
-                        <p>Interface de chat avec accès au contexte complet du dossier. Le modèle répond en s'appuyant sur vos pièces réelles via RAG — pas de réponses génériques hors contexte.</p>
-                        <span class="immo-module-tag">Tous les plans</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">🏗️</div>
-                        <h4>Mémoire de dossier</h4>
-                        <p>Stockage persistant de l'état d'analyse par dossier (phase 1, 2, 3, timeline, faits extraits). Verrouillage optimiste, cache 5 min, invalidation manuelle. Reprise contextuelle à chaque session.</p>
-                        <span class="immo-module-tag">Tous les plans</span>
-                    </div>
-                    <div class="immo-module-card immo-module-card--juris">
-                        <div class="immo-module-icon">📊</div>
-                        <h4>Quotas IA & monitoring</h4>
-                        <p>Suivi token par token des consommations IA (GPT-5, Claude Opus). Alertes à 50 %, 80 %, 100 %. Estimation coût EUR par requête. Tableau de bord admin avec MRR/ARR et usage global.</p>
-                        <span class="immo-module-tag">Tous les plans</span>
-                    </div>
-                </div>
-
-                <!-- Plans Juris -->
-                <div class="immo-plans-intro">
-                    <h3>Des formules pour chaque profil</h3>
-                    <p>Du premier essai gratuit à l'offre cabinet — le quota IA évolue avec vos besoins.</p>
-                </div>
-
-                <div class="immo-plans-grid juris-plans-grid">
-                    <div class="immo-plan-card">
-                        <div class="immo-plan-name">Free</div>
-                        <div class="immo-plan-price">0 €</div>
-                        <div class="immo-plan-period">pour toujours</div>
-                        <div class="immo-plan-desc">1 espace de travail · Ingestion limitée · Phases 1 & 2 · Chat IA · Idéal pour tester.</div>
-                        <a href="https://juris.oro-solution.com#essai" class="immo-plan-cta" target="_blank" rel="noopener">Commencer</a>
-                    </div>
-                    <div class="immo-plan-card featured">
-                        <div class="immo-plan-name">Premium</div>
-                        <div class="immo-plan-price">Sur devis</div>
-                        <div class="immo-plan-period">/ mois</div>
-                        <div class="immo-plan-desc">Dossiers illimités · Phase 3 IA Claude · RAG complet · Outlook sync · Exports DOCX/PDF.</div>
-                        <a href="https://juris.oro-solution.com#contact" class="immo-plan-cta" target="_blank" rel="noopener">Demander</a>
-                    </div>
-                    <div class="immo-plan-card">
-                        <div class="immo-plan-name">Pro / Cabinet</div>
-                        <div class="immo-plan-price">Sur devis</div>
-                        <div class="immo-plan-period">selon usage</div>
-                        <div class="immo-plan-desc">Multi-utilisateurs · Quota IA dédié · Onboarding · SLA · Intégration cabinet.</div>
-                        <a href="https://juris.oro-solution.com#contact" class="immo-plan-cta" target="_blank" rel="noopener">Contacter</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="section section-immo" id="immo-detail">
             <div class="container">
                 <div class="section-heading">
@@ -480,52 +362,138 @@
             </div>
         </section>
 
+        <!-- ═══════════ JURIS DETAIL ═══════════ -->
+        <section class="section section-juris-detail" id="juris-detail">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow" style="color:var(--brand-deep);background:rgba(47,70,255,0.09);">ORO Juris — tour des modules</p>
+                    <h2>Une analyse juridique en 3 phases, du document brut au dossier exploitable.</h2>
+                    <p>ORO Juris ingère vos pièces, construit la chronologie, détecte les contradictions et génère vos documents — avec l'IA comme co-pilote à chaque étape.</p>
+                </div>
+
+                <div class="immo-modules-grid">
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📥</div>
+                        <h4>Ingestion documentaire</h4>
+                        <p>Import de PDF, images, emails, SMS, DOCX. OCR Tesseract pour les scans. Déduplication SHA256, chunking 1 200 caract., embeddings OpenAI stockés en base vectorielle.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">⚖️</div>
+                        <h4>Analyse phase 1 — Procédurale</h4>
+                        <p>Mapping déterministe vers 8 domaines du droit français (famille, pénal, commercial…). Chargement des procédures, stade actuel, documents requis — sans appel IA, sans coût token.</p>
+                        <span class="immo-module-tag">Déterministe · Gratuit</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📐</div>
+                        <h4>Analyse phase 2 — Juridique</h4>
+                        <p>Moteur de principes juridiques : 16 principes par domaine, scoring multi-facteur, force probante estimée, lacunes identifiées, charge de la preuve. 100 % déterministe.</p>
+                        <span class="immo-module-tag">Déterministe · Gratuit</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">🤖</div>
+                        <h4>Analyse phase 3 — IA Claude Opus</h4>
+                        <p>Raisonnement syllogistique étendu (3 000 tokens de réflexion), construction d'arguments, détection des contre-arguments. Budget 15 000 tokens par dossier, géré et traçable.</p>
+                        <span class="immo-module-tag">Premium · Pro</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">🔍</div>
+                        <h4>RAG 4 étapes</h4>
+                        <p>Recherche hybride : similarité vectorielle → mots-clés full-text → correspondance nom de fichier → découverte par liens. Citations avec scores de confiance, snippets contextuels.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📅</div>
+                        <h4>Chronologie & timeline</h4>
+                        <p>Extraction automatique d'événements datés depuis tous les documents. 140+ événements indexés, vue hybride RAG + legacy, filtrages, zoom, export. Correction timezone locale intégrée.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">🧠</div>
+                        <h4>Détection patterns & DARVO</h4>
+                        <p>Identification automatique de patterns comportementaux : DARVO, contrôle coercitif, inversion accusatoire, incohérences cross-document, indices de pression. Alertes structurées.</p>
+                        <span class="immo-module-tag">Premium · Pro</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📧</div>
+                        <h4>Intégration email Outlook</h4>
+                        <p>Connexion OAuth2 Azure Entra ID. Synchronisation des dossiers email, import automatique des pièces jointes, parsing SMS. Ingestion en pipeline complet depuis la boîte mail.</p>
+                        <span class="immo-module-tag">Pro · Cabinet</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📄</div>
+                        <h4>Génération de documents</h4>
+                        <p>17 exports disponibles : mémos DOCX/PDF, chronologies structurées, saisines, synthèses de preuves, ZIP complets. Formatage professionnel, citations sourcées.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">💬</div>
+                        <h4>Chat IA dossier</h4>
+                        <p>Interface de chat avec accès au contexte complet du dossier. Le modèle répond en s'appuyant sur vos pièces réelles via RAG — pas de réponses génériques hors contexte.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">🏗️</div>
+                        <h4>Mémoire de dossier</h4>
+                        <p>Stockage persistant de l'état d'analyse par dossier (phase 1, 2, 3, timeline, faits extraits). Verrouillage optimiste, cache 5 min, invalidation manuelle. Reprise contextuelle à chaque session.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                    <div class="immo-module-card immo-module-card--juris">
+                        <div class="immo-module-icon">📊</div>
+                        <h4>Quotas IA & monitoring</h4>
+                        <p>Suivi token par token des consommations IA (GPT-5, Claude Opus). Alertes à 50 %, 80 %, 100 %. Estimation coût EUR par requête. Tableau de bord admin avec MRR/ARR et usage global.</p>
+                        <span class="immo-module-tag">Tous les plans</span>
+                    </div>
+                </div>
+
+                <!-- Plans Juris -->
+                <div class="immo-plans-intro">
+                    <h3>Des formules pour chaque profil</h3>
+                    <p>Du premier essai gratuit à l'offre cabinet — le quota IA évolue avec vos besoins.</p>
+                </div>
+
+                <div class="immo-plans-grid juris-plans-grid">
+                    <div class="immo-plan-card">
+                        <div class="immo-plan-name">Free</div>
+                        <div class="immo-plan-price">0 €</div>
+                        <div class="immo-plan-period">pour toujours</div>
+                        <div class="immo-plan-desc">1 espace de travail · Ingestion limitée · Phases 1 & 2 · Chat IA · Idéal pour tester.</div>
+                        <a href="https://juris.oro-solution.com#essai" class="immo-plan-cta" target="_blank" rel="noopener">Commencer</a>
+                    </div>
+                    <div class="immo-plan-card featured">
+                        <div class="immo-plan-name">Premium</div>
+                        <div class="immo-plan-price">Sur devis</div>
+                        <div class="immo-plan-period">/ mois</div>
+                        <div class="immo-plan-desc">Dossiers illimités · Phase 3 IA Claude · RAG complet · Outlook sync · Exports DOCX/PDF.</div>
+                        <a href="https://juris.oro-solution.com#contact" class="immo-plan-cta" target="_blank" rel="noopener">Demander</a>
+                    </div>
+                    <div class="immo-plan-card">
+                        <div class="immo-plan-name">Pro / Cabinet</div>
+                        <div class="immo-plan-price">Sur devis</div>
+                        <div class="immo-plan-period">selon usage</div>
+                        <div class="immo-plan-desc">Multi-utilisateurs · Quota IA dédié · Onboarding · SLA · Intégration cabinet.</div>
+                        <a href="https://juris.oro-solution.com#contact" class="immo-plan-cta" target="_blank" rel="noopener">Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ═══════════ ECOSYSTEM ═══════════ -->
         <section class="section section-dark" id="ecosystem">
             <div class="container">
                 <div class="section-heading section-heading--light">
                     <p class="eyebrow eyebrow--light">Architecture plateforme</p>
-                    <h2>Un écosystème pensé pour la performance métier.</h2>
-                    <p>oro-solution.com est le hub global qui orchestre deux modules indépendants, une application centrale et une infrastructure commune.</p>
+                    <h2>Une infrastructure solide. Des modules qui s'y connectent.</h2>
+                    <p>ORO repose sur un socle commun robuste — authentification, IA, stockage, sécurité — sur lequel chaque module métier s'appuie sans duplication ni compromis.</p>
                 </div>
 
                 <div class="eco-layout">
                     <div class="eco-map">
                         <div class="eco-tier eco-tier--hub">
-                            <div class="eco-tier-label">Hub Global</div>
+                            <div class="eco-tier-label">Socle commun</div>
                             <div class="eco-node eco-node--hub">
-                                <span class="eco-node-url">oro-solution.com</span>
-                                <span class="eco-node-name">Portail principal</span>
-                            </div>
-                        </div>
-
-                        <div class="eco-arrow eco-arrow--down">
-                            <svg width="2" height="40" viewBox="0 0 2 40"><line x1="1" y1="0" x2="1" y2="40" stroke="rgba(138,247,240,0.4)" stroke-width="1.5" stroke-dasharray="4 3"/></svg>
-                        </div>
-
-                        <div class="eco-tier eco-tier--marketing">
-                            <div class="eco-tier-label">Sites marketing</div>
-                            <div class="eco-tier-row">
-                                <div class="eco-node eco-node--juris">
-                                    <span class="eco-node-url">juris.oro-solution.com</span>
-                                    <span class="eco-node-name">Marketing juridique</span>
-                                </div>
-                                <div class="eco-node eco-node--immo">
-                                    <span class="eco-node-url">immo.oro-solution.com</span>
-                                    <span class="eco-node-name">Marketing immobilier</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="eco-arrow eco-arrow--down">
-                            <svg width="2" height="40" viewBox="0 0 2 40"><line x1="1" y1="0" x2="1" y2="40" stroke="rgba(138,247,240,0.4)" stroke-width="1.5" stroke-dasharray="4 3"/></svg>
-                        </div>
-
-                        <div class="eco-tier eco-tier--app">
-                            <div class="eco-tier-label">Application centrale</div>
-                            <div class="eco-node eco-node--app">
-                                <span class="eco-node-url">app.oro-solution.com</span>
-                                <span class="eco-node-name">Login & accès modules</span>
+                                <span class="eco-node-url">ORO Core Platform</span>
+                                <span class="eco-node-name">Auth · IA · Stockage · Sécurité</span>
                             </div>
                         </div>
 
@@ -536,13 +504,39 @@
                         <div class="eco-tier eco-tier--modules">
                             <div class="eco-tier-label">Modules métier</div>
                             <div class="eco-tier-row">
-                                <div class="eco-node eco-node--mod eco-node--juris">
-                                    <span class="eco-node-url">app.oro-solution.com/juris</span>
-                                    <span class="eco-node-name">Module juridique</span>
-                                </div>
                                 <div class="eco-node eco-node--mod eco-node--immo">
-                                    <span class="eco-node-url">app.oro-solution.com/immo</span>
-                                    <span class="eco-node-name">Module immobilier</span>
+                                    <span class="eco-node-url">ORO Immo</span>
+                                    <span class="eco-node-name">Gestion immobilière</span>
+                                </div>
+                                <div class="eco-node eco-node--mod eco-node--juris">
+                                    <span class="eco-node-url">ORO Juris</span>
+                                    <span class="eco-node-name">Analyse juridique</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="eco-arrow eco-arrow--down">
+                            <svg width="2" height="40" viewBox="0 0 2 40"><line x1="1" y1="0" x2="1" y2="40" stroke="rgba(138,247,240,0.4)" stroke-width="1.5" stroke-dasharray="4 3"/></svg>
+                        </div>
+
+                        <div class="eco-tier eco-tier--integrations">
+                            <div class="eco-tier-label">Intégrations tierces</div>
+                            <div class="eco-tier-row eco-tier-row--ext">
+                                <div class="eco-node eco-node--ext">
+                                    <span class="eco-node-url">Yousign</span>
+                                    <span class="eco-node-name">Signature électronique</span>
+                                </div>
+                                <div class="eco-node eco-node--ext">
+                                    <span class="eco-node-url">Legifrance</span>
+                                    <span class="eco-node-name">Référentiel juridique</span>
+                                </div>
+                                <div class="eco-node eco-node--ext">
+                                    <span class="eco-node-url">Microsoft Outlook</span>
+                                    <span class="eco-node-name">Email & pièces jointes</span>
+                                </div>
+                                <div class="eco-node eco-node--ext">
+                                    <span class="eco-node-url">Google</span>
+                                    <span class="eco-node-name">Agenda & services</span>
                                 </div>
                             </div>
                         </div>
@@ -552,22 +546,22 @@
                         <div class="eco-feature-card">
                             <div class="eco-feature-icon">🔐</div>
                             <h4>Authentification unifiée</h4>
-                            <p>Un seul compte pour accéder à tous les modules depuis app.oro-solution.com. Gestion des rôles et abonnements centralisée.</p>
+                            <p>Un seul compte pour accéder à tous les modules. Gestion des rôles, des abonnements et des quotas centralisée sur la plateforme.</p>
                         </div>
                         <div class="eco-feature-card">
                             <div class="eco-feature-icon">🧠</div>
                             <h4>IA partagée, spécialisée par métier</h4>
-                            <p>L'infrastructure IA (OCR, embeddings, RAG, Claude Opus) est commune. Les prompts, règles et sorties sont calibrés par domaine.</p>
+                            <p>L'infrastructure IA est commune à tous les modules. Les modèles, règles et sorties sont calibrés pour chaque domaine métier.</p>
+                        </div>
+                        <div class="eco-feature-card">
+                            <div class="eco-feature-icon">🔗</div>
+                            <h4>Intégrations tierces natives</h4>
+                            <p>Yousign pour les signatures électroniques, Legifrance pour la base juridique de référence, Microsoft Outlook et Google pour la synchronisation agenda et email — connectés nativement, sans développement à votre charge.</p>
                         </div>
                         <div class="eco-feature-card">
                             <div class="eco-feature-icon">📡</div>
-                            <h4>Données cloisonnées</h4>
-                            <p>Les espaces de travail Juris et Immo sont strictement isolés. Vos documents métier ne se mélangent jamais.</p>
-                        </div>
-                        <div class="eco-feature-card">
-                            <div class="eco-feature-icon">🇫🇷</div>
-                            <h4>Hébergement souverain</h4>
-                            <p>Données hébergées en Union Européenne. Conformité RGPD garantie. Aucun transfert hors UE.</p>
+                            <h4>Données cloisonnées & souveraines</h4>
+                            <p>Les espaces de travail sont strictement isolés entre modules et entre clients. Données hébergées en Union Européenne. Conformité RGPD garantie.</p>
                         </div>
                     </div>
                 </div>
@@ -622,13 +616,13 @@
         <section class="section section-cta" id="acces">
             <div class="container">
                 <div class="cta-grid">
-                    <div class="cta-card cta-card--juris">
-                        <p class="cta-kicker">Module juridique</p>
-                        <h3>ORO Juris</h3>
-                        <p>Découvrez l'assistant probatoire — analysez vos premières pièces gratuitement.</p>
+                    <div class="cta-card cta-card--immo">
+                        <p class="cta-kicker cta-kicker--immo">Plateforme immobilière</p>
+                        <h3>ORO Immo</h3>
+                        <p>Gérez baux, loyers, locataires et copropriétés avec l'IA — découverte gratuite, sans carte bancaire.</p>
                         <div class="cta-buttons">
-                            <a href="https://juris.oro-solution.com" class="btn btn-primary" target="_blank" rel="noopener">Voir le site marketing</a>
-                            <a href="https://oro-juris.onrender.com/juris" class="btn btn-secondary" target="_blank" rel="noopener">Accéder au module</a>
+                            <a href="https://immo.oro-solution.com" class="btn btn-immo" target="_blank" rel="noopener">Voir le site ORO Immo</a>
+                            <a href="https://oro-immo-app.onrender.com" class="btn btn-secondary" target="_blank" rel="noopener">Accéder à l'application</a>
                         </div>
                     </div>
 
@@ -638,13 +632,13 @@
                         <div class="cta-divider-line"></div>
                     </div>
 
-                    <div class="cta-card cta-card--immo">
-                        <p class="cta-kicker cta-kicker--immo">Plateforme immobilière</p>
-                        <h3>ORO Immo</h3>
-                        <p>Gérez baux, loyers, locataires et copropriétés avec l'IA — découverte gratuite, sans carte bancaire.</p>
+                    <div class="cta-card cta-card--juris">
+                        <p class="cta-kicker">Module juridique</p>
+                        <h3>ORO Juris</h3>
+                        <p>Découvrez l'assistant probatoire — analysez vos premières pièces gratuitement.</p>
                         <div class="cta-buttons">
-                            <a href="https://immo.oro-solution.com" class="btn btn-immo" target="_blank" rel="noopener">Voir le site ORO Immo</a>
-                            <a href="https://oro-immo-app.onrender.com" class="btn btn-secondary" target="_blank" rel="noopener">Accéder à l'application</a>
+                            <a href="https://juris.oro-solution.com" class="btn btn-primary" target="_blank" rel="noopener">Voir le site marketing</a>
+                            <a href="https://oro-juris.onrender.com/juris" class="btn btn-secondary" target="_blank" rel="noopener">Accéder au module</a>
                         </div>
                     </div>
                 </div>
