@@ -22,7 +22,7 @@ define('LOG_FILE',       '/home/cosu0953/deploy_webhook.log');
 
 // Repos GitHub → repo path sur le serveur o2switch
 const REPO_MAP = [
-    'ORO_WEBSITE'          => '/home/cosu0953/oro_website',
+    'ORO_WEBSITE'          => '/home/cosu0953/ORO_WEBSITE',
     'ORO-IMMO-WEBSITE'     => '/home/cosu0953/oro_immo_website',
     'ORO_SOLUTION_WEBSITE' => '/home/cosu0953/oro_solution_website_repo',
 ];
