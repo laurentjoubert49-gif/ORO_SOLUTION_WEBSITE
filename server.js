@@ -44,7 +44,10 @@ app.get('/', (_req, res) => {
 /* ── Legal pages ── */
 ['mentions-legales', 'confidentialite', 'cgu'].forEach(page => {
     app.get(`/${page}`, (_req, res) => {
-        res.sendFile(path.join(__dirname, 'index.html')); // fallback until pages are created
+        const filePath = path.join(__dirname, page, 'index.html');
+        res.sendFile(filePath, err => {
+            if (err) res.sendFile(path.join(__dirname, 'index.html'));
+        });
     });
 });
 

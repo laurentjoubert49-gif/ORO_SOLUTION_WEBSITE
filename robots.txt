@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+
+# Ne pas indexer les pages de confirmation/activation
+Disallow: /essai-active
+Disallow: /demo-confirmee
+
+# Crawl delay pour éviter la surcharge
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://oro-solution.com/sitemap.xml
