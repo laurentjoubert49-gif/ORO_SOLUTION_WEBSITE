@@ -24,7 +24,7 @@ define('LOG_FILE',       '/home/cosu0953/deploy_webhook.log');
 const REPO_MAP = [
     'ORO_WEBSITE'          => '/home/cosu0953/oro_website',
     'ORO-IMMO-WEBSITE'     => '/home/cosu0953/oro_immo_website',
-    'ORO_SOLUTION_WEBSITE' => '/home/cosu0953/oro_solution_website',
+    'ORO_SOLUTION_WEBSITE' => '/home/cosu0953/oro_solution_website_repo',
 ];
 
 // ─── VALIDATION SIGNATURE ────────────────────────────────────────────────────
