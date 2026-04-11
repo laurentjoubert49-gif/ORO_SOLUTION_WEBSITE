@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cosu0953/oro-solution.com
+    - /bin/cp -R $REPOSITORY_ROOT/css $DEPLOYPATH/
+    - /bin/cp -R $REPOSITORY_ROOT/js $DEPLOYPATH/
+    - /bin/cp -R $REPOSITORY_ROOT/images $DEPLOYPATH/
+    - /bin/cp $REPOSITORY_ROOT/index.html $DEPLOYPATH/
+    - /bin/cp $REPOSITORY_ROOT/robots.txt $DEPLOYPATH/
+    - /bin/cp $REPOSITORY_ROOT/sitemap.xml $DEPLOYPATH/
+    - /bin/cp $REPOSITORY_ROOT/site.webmanifest $DEPLOYPATH/
+    - /bin/cp $REPOSITORY_ROOT/404.html $DEPLOYPATH/ 2>/dev/null || true
